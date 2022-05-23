@@ -257,9 +257,22 @@ border: 1px solid #ECECEC;
 
 }
 
+
 .header-wrapper-item{
     display: inline-block;
     margin-right: 50px;
+}
+
+.titel{
+    font-family: var(--secondary-txt-cl);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    
+    color: #757575;
+
 }
 /* 
 .header-wrapper-item :last-child{
@@ -267,7 +280,6 @@ border: 1px solid #ECECEC;
 } */
 
 .tel{
-    display: block;
     
     /* position: absolute; */
     width: 122px;
