@@ -195,57 +195,6 @@ border: 1px solid #ECECEC;
 
 }
 
-.studio{
-    /* position: absolute;
-    width: 49px;
-    height: 16px;
-    left: 453px;
-    top: 32px; */
-
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-
-    color:var(--accent-cl);
-}
-
-.portfolio{
-    /* position: absolute;
-    width: 77px;
-    height: 16px;
-    left: 552px;
-    top: 32px; */
-
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-
-    color:var(--accent-cl);
-}
-
-.contakt{
-    /* position: absolute;
-    width: 68px;
-    height: 16px;
-    left: 679px;
-    top: 32px; */
-
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-
-    color:var(--main-txt-cl);
-}
-
 /*================================*/
      /* телефон, e-mail в шапке*/ 
 /*================================*/
@@ -279,40 +228,21 @@ border: 1px solid #ECECEC;
     margin-right: 0px;
 } */
 
-.tel{
-    
-    /* position: absolute; */
-    width: 122px;
-    height: 16px;
-    margin-right: 1263px;
-    margin-top: 32px;
-    
-    font-family: var(--main-font);
-    font-style: normal;
+.header-contact {
+    color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
-    
-    color: #757575;
+    text-decoration: none;
 }
 
-.e-mail{
-    /* position: absolute; */
-    width: 135px;
-    height: 16px;
-    margin-right: 1078px;
-    margin-top: 32px;
-     
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-
-    color: var(--accent-cl);
+.header-wrapper-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
+
 
 .studio-icon{
     color: #212121;
@@ -339,7 +269,6 @@ border: 1px solid #ECECEC;
 
 .hero{
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -348,28 +277,35 @@ border: 1px solid #ECECEC;
     
     background-repeat: no-repeat;
     background-position: center;
-    
+
     background-size: cover;
+
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
 
 }
 
 .hero-title{
     font-family:  var(--main-font);
-    font-style: normal;
+    margin: 0 auto;
+    max-width: 694px;
+    max-height: 120px;
+    margin-bottom: 30px;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    display: block;
     text-align: center;
-    align-items: center;
-    padding: 200px 200px 0 200px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
     
     
     color:var(--main-bg-cl);
 }
 
 .hero-button{
-    display: block;
+
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 700;
@@ -381,15 +317,16 @@ border: 1px solid #ECECEC;
     letter-spacing: 0.06em;
     background-color: var(--accent-cl);
 
-    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 200px;
-
 
     width: 200px;
     height: 50px;
 
+    display: inline-block;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    cursor: pointer;
     
     color:var(--main-bg-cl);
 }
@@ -412,18 +349,21 @@ border: 1px solid #ECECEC;
 /*============================*/
        /* About us*/
 /*============================*/
+
+.about-us-sektion{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .about-us-list{
     display: flex;
-/* 
-    position: absolute;
-    width: 1170px;
-    height: 101px;
-    left: 215px;
-    top: 774px; */
-    margin-top: 94px;
+    list-style: none;
 
 }
 
+.about-us-item{
+    
+}
 .about-us-icon{
     width: 270px;
     height: 120px;
@@ -472,6 +412,8 @@ border: 1px solid #ECECEC;
 
     margin-right: auto;
     margin-left: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
 
@@ -484,7 +426,6 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     color:var(--main-txt-cl);
-    margin-top: 94px;
 
 }
 
@@ -510,6 +451,8 @@ border: 1px solid #ECECEC;
 
 .team-section{
     background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-title{
@@ -523,7 +466,7 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    margin: 94px auto 0;
+    margin: 0 auto 0;
 
     width: 264px;
     height: 42px;
@@ -584,10 +527,12 @@ border: 1px solid #ECECEC;
 
 .portfolio-section{
     background: var(--main-bg-cl);
-}
 
-.portfolio-container{
-    padding-bottom: 94px;
+        padding-top: 94px;
+        padding-bottom: 94px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
 }
 
 .portfolio-list{
@@ -627,6 +572,11 @@ border: 1px solid #ECECEC;
     display: flex;
     flex-wrap: wrap;
 
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
 
 }
 
@@ -651,6 +601,13 @@ border: 1px solid #ECECEC;
 
 .projects-item :last-child{
     margin-right: 0px;
+}
+
+.projects-item-title{
+    padding: 20px 24px 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 .projects-desc{
@@ -684,6 +641,10 @@ border: 1px solid #ECECEC;
 /* Regular costomers */
 /*============================*/
 
+.clients-section{
+    padding: 94px 0;
+}
+
 .clients-titel{
     box-sizing: border-box;
     font-family:var(--main-font);
@@ -695,7 +656,7 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-txt-cl);
-    margin: 94px auto 0;
+    margin: 0 auto;
     
     width: 264px;
     height: 42px;
@@ -737,6 +698,7 @@ border: 1px solid #ECECEC;
 
 .footer{
     background: #2F303A;
+    padding: 60px 0;
 }
 
 .footer-container{
@@ -746,8 +708,6 @@ border: 1px solid #ECECEC;
 .footer-list-container{
     
     margin-right: 215px;
-    margin-top: 20px;
-   padding-bottom: 60px;
 
 }
 
@@ -757,6 +717,7 @@ border: 1px solid #ECECEC;
 }
 
 .address{
+    margin-top: 20px;
     font-family:var(--main-font);
     font-style: normal;
     font-weight: normal;
@@ -781,6 +742,13 @@ border: 1px solid #ECECEC;
 
 }
 
+.footer-contacts {
+    display: flex;
+    margin-top: 9px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+}
 /*======================*/
     /* Social icons */
 /*======================*/
