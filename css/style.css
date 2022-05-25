@@ -57,15 +57,6 @@ li{
   | Сітка для колекції з елементів
   |============================
 */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--indent);
-}
-
-.grid-item {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-}
 
 .body{
     position: relative;
@@ -92,7 +83,7 @@ li{
 
 .header,
 .top-line{
-border: 1px solid #ECECEC;
+border-bottom: 1px solid #ECECEC;
 }
 
 .header-container,
@@ -118,16 +109,15 @@ border: 1px solid #ECECEC;
     font-family: var(--secondary-font);
     font-size: 26px;
     line-height: 1.19;
-
-    padding: 0;
+    padding: 30px 0;
 
     color: var(--main-txt-cl);
 }
 
 .logo-footer{
     display: block;
-    padding-top: 60px;
     color: #FFFFFF;
+    padding: 0;
 }
 .web{
     font-family: var(--secondary-font);
@@ -153,7 +143,8 @@ border: 1px solid #ECECEC;
 
 .nav-link {
     position: relative;
-    color: var(--secondary-txt-cl);
+
+    color: var(--main-txt-cl);
 }
 
 .nav-list{
@@ -172,7 +163,7 @@ border: 1px solid #ECECEC;
     width: 0;
     height: 4px;
     background-color: var(--accent-cl);
-    
+
     content: "";
     transition: width 0.3s ease-out;
 }
@@ -189,7 +180,7 @@ border: 1px solid #ECECEC;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    padding: 30px 0;
+
 
     margin-right: 50px;
 
@@ -229,6 +220,7 @@ border: 1px solid #ECECEC;
 } */
 
 .header-contact {
+    font-family: var(--main-font);
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
@@ -288,7 +280,7 @@ border: 1px solid #ECECEC;
 
 .hero-title{
     font-family:  var(--main-font);
-    margin: 0 auto;
+    margin: 0 238px 30px;
     max-width: 694px;
     max-height: 120px;
     margin-bottom: 30px;
@@ -299,8 +291,7 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
-    
+  
     color:var(--main-bg-cl);
 }
 
@@ -352,7 +343,6 @@ border: 1px solid #ECECEC;
 
 .about-us-sektion{
     padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .about-us-list{
@@ -456,21 +446,15 @@ border: 1px solid #ECECEC;
 }
 
 .team-title{
-    box-sizing: border-box;
     font-family:var(--main-font);
     font-style: normal;
     font-weight: bold;
-
+    font-size: 36px;
     line-height: 1.17;
-
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-txt-cl);
-    margin: 0 auto 0;
+    color:var(--main-txt-cl);
 
-    width: 264px;
-    height: 42px;
-   
 }
 
 .team-list{
@@ -540,6 +524,7 @@ border: 1px solid #ECECEC;
     margin-left: auto;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 
 }
 
@@ -552,7 +537,6 @@ border: 1px solid #ECECEC;
     text-align: center;
     letter-spacing: 0.03em;
     margin-right: 8px;
-    margin-bottom: 12px;
     padding: 6px 22px;
     color: var(--main-txt-cl);
 
@@ -567,27 +551,18 @@ border: 1px solid #ECECEC;
 /*============================*/
 
 .projects-list{
-    margin-right: auto;
-    margin-left: auto;
-    display: flex;
-    flex-wrap: wrap;
-
     padding-top: 94px;
     padding-bottom: 94px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
 
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    list-style: none;
 }
 
 .projects-item{
-    margin-top: 20px;
-    margin-right: auto;
+margin: 15px;
 
-}
-
-.projects-item{
-    --items: 9;
 }
 
 .projects-item :hover,
@@ -620,7 +595,6 @@ border: 1px solid #ECECEC;
     letter-spacing: 0.06em;
     color:var(--main-txt-cl);
 
-    margin-top: 20px;
 }
 
 .projects-tagline{
